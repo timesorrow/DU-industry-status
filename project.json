@@ -1,0 +1,39 @@
+{
+  "cli": {
+    "fmtVersion": 3
+  },
+  "name": "industry-status",
+  "description": "",
+  "sourcePath": "src",
+  "outputPath": "out",
+  "libs": [],
+  "builds": {
+    "main": {
+      "name": "main",
+      "type": "control",
+      "slots": {
+        "db1": {
+          "name": "db1",
+          "type": "databank"
+        },
+        "core": {
+          "name": "core",
+          "type": "core"
+        }
+      }
+    }
+  },
+  "targets": {
+    "development": {
+      "name": "development",
+      "minify": false,
+      "handleErrors": false
+    }
+  },
+  "internalPaths": [
+    "autoconf/",
+    "cpml/",
+    "pl/",
+    "utils/event"
+  ]
+}
